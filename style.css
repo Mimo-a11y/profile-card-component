@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+}
+.container{
+    background-color:hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container__top{
+    background-image: url('images/bg-pattern-top.svg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container__bottom{
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('images/bg-pattern-bottom.svg');
+    background-size: cover;
+}
+.card{
+    height: 330px;
+    width: 300px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: -2px 12px 5rem  hsl(227, 7%, 51%);
+    position: relative;
+
+}
+.card__background{
+    flex-basis: 40%;
+    background-image: url('images/bg-pattern-card.svg');
+}
+.card__profile-image{
+    position: absolute;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 100px;
+    background-image: url('images/image-victor.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0 4px white inset;
+    border-color: white;
+}
+.card__info{
+    flex-basis: 60%;
+    background-color: white;
+    padding: 2em 0 1em 0;
+}
+.card-info__header{
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 700;
+    font-size: 18px;
+    color:  hsl(229, 23%, 23%);
+}
+.card-info__age{
+    font-size: 14px;
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.card-info__address{
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.card-footer{
+    margin-top: 1em;
+    border-top: 1px solid hsl(0, 6%, 87%);
+    text-align: center;
+    padding-top: 2em;
+}
+.card-footer__item{
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    font-weight: 900;
+    font-size: 18px;
+    color:  hsl(229, 23%, 23%);
+}
+.card-footer__items{
+    font-weight: 700;
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+}
