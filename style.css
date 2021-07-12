@@ -21,14 +21,15 @@ body{
 }
 .container__top{
     background-image: url('images/bg-pattern-top.svg');
+    background-position: right bottom;
     background-size: cover;
-    background-position: center;
     height: 350px;
     width: 600px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .container__bottom{
     height: 300px;
     width: 600px;
@@ -58,7 +59,7 @@ body{
     height: 100px;
     width:100px;
     border-radius: 50%;
-    top: 50px;
+    top: 60px;
     left: 100px;
     background-image: url('images/image-victor.jpg');
     background-position: center;
